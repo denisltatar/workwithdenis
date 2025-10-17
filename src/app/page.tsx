@@ -72,7 +72,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+    <main className="min-h-screen bg-white">
       {/* Hero Section - Inspired by HeyFriend */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -144,7 +144,7 @@ export default function Page() {
                     />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-800 text-lg">Denis</h3>
+                    <h3 className="font-bold text-slate-800 text-lg">Denis Tatar</h3>
                     <p className="text-slate-600 text-sm">Web Developer</p>
                   </div>
                 </div>

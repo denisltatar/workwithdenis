@@ -13,16 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HeyFriend — Talk it out. Learn from it.",
-  description: "HeyFriend is a voice-first AI that helps you reflect—then surfaces gentle insights after each session.",
+  metadataBase: new URL('https://workwithdenis.com'),
+  title: "Work With Denis - Custom Web Development",
+  description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
   icons: {
-    icon: '/favicon.svg',
-    apple: '/logo.svg',
+    icon: '/red bowtie.png',
+    apple: '/red bowtie.png',
   },
   openGraph: {
-    title: "HeyFriend — Talk it out. Learn from it.",
-    description: "HeyFriend is a voice-first AI that helps you reflect—then surfaces gentle insights after each session.",
-    images: ['/og.png'],
+    title: "Work With Denis - Custom Web Development",
+    description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
+    images: ['/workwithdenis-logo.png'],
+    url: 'https://workwithdenis.com',
+    siteName: 'Work With Denis',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Work With Denis - Custom Web Development",
+    description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
+    images: ['/workwithdenis-logo.png'],
   },
 };
 

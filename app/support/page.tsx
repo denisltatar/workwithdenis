@@ -16,7 +16,7 @@ export default function SupportPage() {
           <Link href="/" className="inline-flex items-center gap-3 text-slate-600 hover:text-slate-800 transition-colors">
             <ArrowLeft className="h-4 w-4" />
             <Image
-              src="/logo.svg"
+              src="/favicon.svg"
               alt="HeyFriend Logo"
               width={24}
               height={24}
