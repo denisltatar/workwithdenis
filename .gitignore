@@ -1,0 +1,11 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+*.log
+# Env files
+.env*
+# OS/editor noise
+.DS_Store
+*.swp
