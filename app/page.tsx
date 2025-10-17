@@ -85,6 +85,7 @@ export default function Page() {
               src="/workwithdenis-logo.png"
                   alt="Work With Denis Logo"
                   fill
+                  sizes="48px"
                   className="object-contain"
                 />
               </div>
@@ -140,9 +141,10 @@ export default function Page() {
                       src="/workwithdenis-logo.png"
                       alt="Work With Denis Logo"
                       fill
+                      sizes="64px"
                       className="object-contain"
                     />
-        </div>
+                  </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg">Denis</h3>
                     <p className="text-slate-600 text-sm">Web Developer</p>
@@ -190,7 +192,7 @@ export default function Page() {
               {/* Background Decoration */}
               <div className="absolute -top-4 -left-4 w-80 h-96 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl -z-10"></div>
             </div>
-          </div>
+        </div>
         </div>
       </section>
 
@@ -219,6 +221,388 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Work/Portfolio */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-800 mb-4">Recent Work</h2>
+          <p className="text-lg text-slate-600">Projects that showcase my expertise</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* HeyFriend Project */}
+          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+            {/* Website Thumbnail */}
+            <div className="relative h-48 bg-slate-100 overflow-hidden">
+              <img
+                src="/heyfriend-screenshot.png"
+                alt="HeyFriend Website Screenshot"
+                className="w-full h-full object-cover"
+                style={{ display: 'block' }}
+                onError={(e) => {
+                  console.log('HeyFriend image failed to load');
+                  e.currentTarget.style.display = 'none';
+                }}
+                onLoad={() => {
+                  console.log('HeyFriend image loaded successfully');
+                }}
+              />
+            </div>
+            
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">HeyFriend</h3>
+              <p className="text-slate-600 mb-4">Complete branding package including custom website and logo design for a voice-first AI mental health app. Full digital presence from concept to launch.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">User-Friendly</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Mobile Optimized</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Fast Loading</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <a 
+                  href="https://tryheyfriend.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                >
+                  <span>View Project</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <div className="text-sm text-slate-500">2025</div>
+                  </div>
+                </div>
+              </div>
+
+          {/* E&D Home Improvements Project */}
+          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+            {/* Website Thumbnail */}
+            <div className="relative h-48 bg-slate-100 overflow-hidden">
+              <img
+                src="/eandahome-screenshot.png"
+                alt="E&D Home Improvements Website Screenshot"
+                className="w-full h-full object-cover"
+                style={{ display: 'block' }}
+                onError={(e) => {
+                  console.log('E&D image failed to load');
+                  e.currentTarget.style.display = 'none';
+                }}
+                onLoad={() => {
+                  console.log('E&D image loaded successfully');
+                }}
+              />
+            </div>
+            
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">E&D Home Improvements</h3>
+              <p className="text-slate-600 mb-4">Complete branding package including custom website, business cards, logo design, and Google Business setup for drywall business. Full digital presence from concept to launch.</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Contact Forms</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">SEO Optimized</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Mobile Friendly</span>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                  </div>
+              <div className="flex items-center justify-between">
+                <a 
+                  href="https://eandahomeimprovements.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                >
+                  <span>View Project</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <div className="text-sm text-slate-500">2025</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <p className="text-slate-600 mb-4">Want to see your project here?</p>
+          <a 
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+          >
+            <span>Start Your Project</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-800 mb-4">Choose Your Package</h2>
+          <p className="text-lg text-slate-600">Flexible options to fit your business needs and budget</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Starter Package */}
+          <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">Starter</h3>
+              <div className="text-4xl font-bold text-slate-800 mb-2">$1,200</div>
+              <p className="text-slate-600">Perfect for new businesses</p>
+            </div>
+            
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Custom Website</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Mobile Responsive Design</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Contact Forms</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Basic SEO Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">2 Weeks Delivery</span>
+              </li>
+            </ul>
+            
+            <a 
+              href="#contact"
+              className="w-full inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+
+          {/* Professional Package */}
+          <div className="bg-white rounded-2xl border-2 border-green-500 p-8 hover:shadow-lg transition-shadow relative">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+            </div>
+            
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">Professional</h3>
+              <div className="text-4xl font-bold text-slate-800 mb-2">$2,000</div>
+              <p className="text-slate-600">Complete business solution</p>
+            </div>
+            
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Custom Website</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Mobile Responsive Design</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Contact Forms</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Basic SEO Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Custom Logo Design</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Business Cards (1 design)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Google Business Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">3 Weeks Delivery</span>
+              </li>
+            </ul>
+            
+            <a 
+              href="#contact"
+              className="w-full inline-flex items-center justify-center rounded-lg bg-green-500 px-6 py-3 font-semibold text-white hover:bg-green-600 transition-colors"
+            >
+              Get Started
+            </a>
+              </div>
+
+          {/* Full Package */}
+          <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">Complete</h3>
+              <div className="text-4xl font-bold text-slate-800 mb-2">$3,000</div>
+              <p className="text-slate-600">Everything you need to succeed</p>
+            </div>
+            
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Custom Website</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Mobile Responsive Design</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Contact Forms</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Basic SEO Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Custom Logo Design</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Business Cards (3 designs)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Google Business Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Advanced SEO Optimization</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Keyword Research & Strategy</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">Google Analytics Setup</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                </div>
+                <span className="text-slate-700">4 Weeks Delivery</span>
+              </li>
+            </ul>
+            
+            <a 
+              href="#contact"
+              className="w-full inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        {/* Additional Info */}
+        <div className="text-center mt-12">
+          <p className="text-slate-600 mb-4">All packages include 30-day support and free minor updates</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="flex items-center gap-2 text-sm text-slate-600">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span>Free consultation</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-slate-600">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span>No hidden fees</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-slate-600">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span>Money-back guarantee</span>
+            </div>
+          </div>
+          
+          {/* Maintenance Fee Info */}
+          <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 max-w-3xl mx-auto border border-green-100 shadow-sm">
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                Ongoing Support
+              </div>
+              <h4 className="text-2xl font-bold text-slate-800 mb-3">Keep Your Website Running Smoothly</h4>
+              <p className="text-slate-600 text-lg leading-relaxed">
+                After project completion, a maintenance fee of <span className="font-bold text-green-600 text-xl">$15/month</span> ensures your website stays secure, updated, and optimized.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+                </div>
+                <h5 className="font-semibold text-slate-800 mb-2">Security Updates</h5>
+                <p className="text-sm text-slate-600">Keep your website protected from threats</p>
+              </div>
+              
+              <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+                </div>
+                <h5 className="font-semibold text-slate-800 mb-2">Content Changes</h5>
+                <p className="text-sm text-slate-600">Updates and modifications as needed</p>
+                  </div>
+              
+              <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+                </div>
+                <h5 className="font-semibold text-slate-800 mb-2">Technical Support</h5>
+                <p className="text-sm text-slate-600">Ongoing help and maintenance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
@@ -236,11 +620,11 @@ export default function Page() {
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Plan & Design</h4>
             <p className="text-slate-600">Understanding your business goals, target audience, and creating a detailed project roadmap with wireframes and designs.</p>
           </div>
-          <div className="text-center">
+        <div className="text-center">
             <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Develop & Build</h4>
             <p className="text-slate-600">Building your website with modern technologies, ensuring it&apos;s fast, responsive, and optimized for search engines.</p>
-          </div>
+            </div>
           <div className="text-center">
             <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Launch & Support</h4>
