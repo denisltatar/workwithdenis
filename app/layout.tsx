@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "Work With Denis - Custom Web Development",
   description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
   icons: {
-    icon: '/red bowtie.png',
-    apple: '/red bowtie.png',
+    icon: '/green bowtie.png',
+    apple: '/green bowtie.png',
   },
   openGraph: {
     title: "Work With Denis - Custom Web Development",
