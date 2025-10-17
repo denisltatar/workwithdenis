@@ -72,24 +72,24 @@ export default function Page() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-emerald-50">
       {/* Hero Section - Inspired by HeyFriend */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div>
+        <div>
             {/* Logo */}
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 relative">
-        <Image
-                  src="/workwithdenis-logo.png"
+            <Image
+              src="/workwithdenis-logo.png"
                   alt="Work With Denis Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <h1 className="text-2xl font-bold text-slate-800">Work With Denis</h1>
-            </div>
+          </div>
 
             {/* Headline */}
             <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-800 mb-6">
@@ -105,7 +105,7 @@ export default function Page() {
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
               <a 
                 href="#contact"
-                className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+                className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
               >
                 <span>Get Started Today</span>
                 <ArrowRight className="w-4 h-4" />
@@ -125,7 +125,7 @@ export default function Page() {
                 <a href="#privacy" className="hover:text-slate-700 transition-colors">Privacy Policy</a>
                 <a href="#support" className="hover:text-slate-700 transition-colors">Support</a>
               </div>
-            </div>
+        </div>
           </div>
 
           {/* Right Content - Business Card instead of Mobile */}
@@ -142,7 +142,7 @@ export default function Page() {
                       fill
                       className="object-contain"
                     />
-                  </div>
+        </div>
                   <div>
                     <h3 className="font-bold text-slate-800 text-lg">Denis</h3>
                     <p className="text-slate-600 text-sm">Web Developer</p>
@@ -154,11 +154,11 @@ export default function Page() {
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <span className="text-slate-700 text-sm">Available for new projects</span>
-                  </div>
+              </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                     <span className="text-slate-700 text-sm">Custom website development</span>
-                  </div>
+            </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                     <span className="text-slate-700 text-sm">Modern technologies</span>
@@ -168,27 +168,27 @@ export default function Page() {
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-orange-600">50+</div>
+                    <div className="text-2xl font-bold text-green-600">50+</div>
                     <div className="text-xs text-slate-600">Websites</div>
-                  </div>
+              </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-orange-600">5+</div>
+                    <div className="text-2xl font-bold text-green-600">5+</div>
                     <div className="text-xs text-slate-600">Years</div>
-                  </div>
+            </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-orange-600">100%</div>
+                    <div className="text-2xl font-bold text-green-600">100%</div>
                     <div className="text-xs text-slate-600">Success</div>
                   </div>
                 </div>
 
                 {/* Floating Action Button */}
-                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
                   <CheckCircle className="w-8 h-8 text-white" />
                 </div>
               </div>
 
               {/* Background Decoration */}
-              <div className="absolute -top-4 -left-4 w-80 h-96 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl -z-10"></div>
+              <div className="absolute -top-4 -left-4 w-80 h-96 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl -z-10"></div>
             </div>
           </div>
         </div>
@@ -205,13 +205,13 @@ export default function Page() {
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600">
+                <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-slate-800">{service.title}</h3>
               </div>
               <p className="text-slate-600 mb-4">{service.desc}</p>
-              <a href="#contact" className="text-sm font-semibold text-orange-600 hover:opacity-80">
+              <a href="#contact" className="text-sm font-semibold text-green-600 hover:opacity-80">
                 Learn more →
               </a>
             </div>
@@ -232,17 +232,17 @@ export default function Page() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+            <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Plan & Design</h4>
             <p className="text-slate-600">Understanding your business goals, target audience, and creating a detailed project roadmap with wireframes and designs.</p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+            <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Develop & Build</h4>
             <p className="text-slate-600">Building your website with modern technologies, ensuring it&apos;s fast, responsive, and optimized for search engines.</p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+            <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
             <h4 className="text-xl font-semibold text-slate-800 mb-4">Launch & Support</h4>
             <p className="text-slate-600">Deploying your website, training your team, and providing ongoing maintenance and support to keep everything running smoothly.</p>
           </div>
@@ -260,7 +260,7 @@ export default function Page() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold mr-4">
+                <div className="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold mr-4">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
@@ -333,7 +333,7 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a 
               href="mailto:hello@workwithdenis.com"
-              className="inline-flex items-center rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white hover:bg-orange-600 transition-colors"
+              className="inline-flex items-center rounded-lg bg-green-500 px-6 py-3 font-semibold text-white hover:bg-green-600 transition-colors"
             >
               Get Started Today
         </a>
@@ -347,19 +347,19 @@ export default function Page() {
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <div className="text-2xl font-bold text-orange-500 mb-2">Free</div>
+              <div className="text-2xl font-bold text-green-500 mb-2">Free</div>
               <div className="text-sm text-slate-600">Initial Consultation</div>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <div className="text-2xl font-bold text-orange-500 mb-2">24/7</div>
+              <div className="text-2xl font-bold text-green-500 mb-2">24/7</div>
               <div className="text-sm text-slate-600">Support Available</div>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <div className="text-2xl font-bold text-orange-500 mb-2">30-Day</div>
+              <div className="text-2xl font-bold text-green-500 mb-2">30-Day</div>
               <div className="text-sm text-slate-600">Money-Back Guarantee</div>
             </div>
           </div>
-    </div>
+          </div>
       </section>
     </main>
   );
