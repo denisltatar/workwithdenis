@@ -1,5 +1,5 @@
 "use client";
-import { Briefcase, TrendingUp, Users, ChevronDown, Star, ArrowRight, Rocket, Globe, Smartphone, Palette, CreditCard, MapPin } from "lucide-react";
+import { ChevronDown, Star, ArrowRight, Globe, Smartphone, Palette, CreditCard, MapPin } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -150,7 +150,7 @@ export default function Page() {
                 </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-slate-700 text-sm">Custom websites & mobile apps</span>
+                       <span className="text-slate-700 text-sm">Custom websites &amp; mobile apps</span>
                 </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -492,7 +492,7 @@ export default function Page() {
                      <div className="flex flex-wrap gap-2 mb-4">
                        <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Logo Design</span>
                      </div>
-                     <p className="text-slate-600 mb-4">Professional logo design for E&A Home Improvements, featuring modern typography and clean design elements that represent the company's drywall and home improvement services.</p>
+                     <p className="text-slate-600 mb-4">Professional logo design for E&A Home Improvements, featuring modern typography and clean design elements that represent the company&apos;s drywall and home improvement services.</p>
                      <div className="flex flex-wrap gap-2 mb-4">
                        <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Professional Design</span>
                        <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Brand Identity</span>
@@ -908,7 +908,7 @@ export default function Page() {
         <div className="text-center">
         <h2 className="text-3xl font-bold text-slate-800 mb-6">Ready to Build Your Website or App?</h2>
         <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-          Let's discuss your project and create a custom website or application that helps your business grow.
+          Let&apos;s discuss your project and create a custom website or application that helps your business grow.
             </p>
           </div>
 
