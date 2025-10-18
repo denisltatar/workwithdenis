@@ -265,7 +265,7 @@ export default function Page() {
                    <div className="relative h-48 bg-slate-100 overflow-hidden">
                      <img
                        src="/eandahome-screenshot.png"
-                       alt="E&D Home Improvements Website Screenshot"
+                       alt="E&A Home Improvements Website Screenshot"
                        className="w-full h-full object-cover"
                        style={{ display: 'block' }}
                        onError={(e) => {
