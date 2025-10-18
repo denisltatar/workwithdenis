@@ -259,7 +259,7 @@ export default function Page() {
                    </div>
                  </div>
 
-                 {/* E&D Home Improvements Project */}
+                 {/* E&A Home Improvements Project */}
                  <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
                    {/* Website Thumbnail */}
                    <div className="relative h-48 bg-slate-100 overflow-hidden">
@@ -269,17 +269,17 @@ export default function Page() {
                        className="w-full h-full object-cover"
                        style={{ display: 'block' }}
                        onError={(e) => {
-                         console.log('E&D image failed to load');
+                         console.log('E&A image failed to load');
                          e.currentTarget.style.display = 'none';
                        }}
                        onLoad={() => {
-                         console.log('E&D image loaded successfully');
+                         console.log('E&A image loaded successfully');
                        }}
                      />
                    </div>
 
                    <div className="p-6 pl-8">
-                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">E&D Home Improvements</h3>
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">E&A Home Improvements</h3>
                      <div className="flex flex-wrap gap-2 mb-4">
                        <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Custom Website</span>
                      </div>
