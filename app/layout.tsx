@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Work With Denis - Custom Web Development",
     description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
-    images: ['/workwithdenis-logo.png'],
+    images: ['/OG screenshot thumbnail.png'],
     url: 'https://workwithdenis.com',
     siteName: 'Work With Denis',
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Work With Denis - Custom Web Development",
     description: "Professional web development services. Custom websites, e-commerce solutions, and web applications that help your business grow online.",
-    images: ['/workwithdenis-logo.png'],
+    images: ['/OG screenshot thumbnail.png'],
   },
 };
 
