@@ -361,13 +361,7 @@ export default function Page() {
                                  <!-- Card Set 1 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
-                                       // Track card flip
-                                       if (typeof window !== 'undefined' && window.va) {
-                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v1', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
-                                       }
-                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
-                                     ">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V1.png" alt="Business Card Front 1" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -390,13 +384,7 @@ export default function Page() {
                                  <!-- Card Set 2 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
-                                       // Track card flip
-                                       if (typeof window !== 'undefined' && window.va) {
-                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v1_variant', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
-                                       }
-                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
-                                     ">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V1.png" alt="Business Card Front 2" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -419,13 +407,7 @@ export default function Page() {
                                  <!-- Card Set 3 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
-                                       // Track card flip
-                                       if (typeof window !== 'undefined' && window.va) {
-                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v2', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
-                                       }
-                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
-                                     ">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V2.png" alt="Business Card Front 3" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -448,13 +430,7 @@ export default function Page() {
                                  <!-- Card Set 4 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
-                                       // Track card flip
-                                       if (typeof window !== 'undefined' && window.va) {
-                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v3', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
-                                       }
-                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
-                                     ">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V3.png" alt="Business Card Front 4" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
