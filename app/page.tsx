@@ -2,6 +2,7 @@
 import { ChevronDown, Star, ArrowRight, Globe, Smartphone, Palette, CreditCard, MapPin } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import { track } from '@vercel/analytics';
 
 export default function Page() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -104,8 +105,9 @@ export default function Page() {
 
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
-              <a 
+              <a
                 href="#contact"
+                onClick={() => track('cta_clicked', { location: 'hero_section', button: 'get_started_today_main_cta' })}
                 className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
               >
                 <span>Get Started Today</span>
@@ -113,6 +115,7 @@ export default function Page() {
           </a>
           <a
                 href="#services"
+                onClick={() => track('cta_clicked', { location: 'hero_section', button: 'view_services_secondary' })}
                 className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
               >
                 View Services
@@ -338,9 +341,12 @@ export default function Page() {
                      </div>
                      <div className="flex items-center justify-between">
                        <button
-                         onClick={() => {
-                           // Create a modal with flipable business cards
-                           const modal = document.createElement('div');
+                        onClick={() => {
+                          // Track project interaction
+                          track('project_viewed', { project: 'e_a_business_cards_portfolio' });
+                          
+                          // Create a modal with flipable business cards
+                          const modal = document.createElement('div');
                            modal.className = 'fixed inset-0 bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4';
                            modal.innerHTML = `
                              <div class="bg-white rounded-2xl p-6 max-w-6xl max-h-[90vh] overflow-y-auto">
@@ -355,7 +361,13 @@ export default function Page() {
                                  <!-- Card Set 1 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
+                                       // Track card flip
+                                       if (typeof window !== 'undefined' && window.va) {
+                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v1', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
+                                       }
+                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
+                                     ">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V1.png" alt="Business Card Front 1" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -378,7 +390,13 @@ export default function Page() {
                                  <!-- Card Set 2 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
+                                       // Track card flip
+                                       if (typeof window !== 'undefined' && window.va) {
+                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v1_variant', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
+                                       }
+                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
+                                     ">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V1.png" alt="Business Card Front 2" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -401,7 +419,13 @@ export default function Page() {
                                  <!-- Card Set 3 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
+                                       // Track card flip
+                                       if (typeof window !== 'undefined' && window.va) {
+                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v2', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
+                                       }
+                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
+                                     ">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V2.png" alt="Business Card Front 3" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -424,7 +448,13 @@ export default function Page() {
                                  <!-- Card Set 4 -->
                                  <div class="text-center">
                                    <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
-                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="
+                                       // Track card flip
+                                       if (typeof window !== 'undefined' && window.va) {
+                                         window.va.track('business_card_flipped', { card_set: 'business_card_design_v3', action: this.style.transform === 'rotateY(180deg)' ? 'flip_to_front' : 'flip_to_back' });
+                                       }
+                                       this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'
+                                     ">
                                        <div class="absolute inset-2 backface-hidden">
                                          <img src="/FRONT V3.png" alt="Business Card Front 4" class="w-full h-full object-contain rounded-lg shadow-md" />
                                          <!-- Tap indicator on front -->
@@ -501,9 +531,12 @@ export default function Page() {
                      </div>
                      <div className="flex items-center justify-between">
                        <button
-                         onClick={() => {
-                           // Create a modal to show logo designs
-                           const modal = document.createElement('div');
+                        onClick={() => {
+                          // Track project interaction
+                          track('project_viewed', { project: 'e_a_logo_design_portfolio' });
+                          
+                          // Create a modal to show logo designs
+                          const modal = document.createElement('div');
                            modal.className = 'fixed inset-0 bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4';
                            modal.innerHTML = `
                              <div class="bg-white rounded-2xl p-6 max-w-4xl max-h-[90vh] overflow-y-auto">
@@ -613,6 +646,7 @@ export default function Page() {
             
             <a 
               href="#contact"
+              onClick={() => track('cta_clicked', { location: 'services_section', button: 'basic_package_get_started' })}
               className="w-full inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
             >
               Get Started
@@ -684,6 +718,7 @@ export default function Page() {
             
             <a 
               href="#contact"
+              onClick={() => track('cta_clicked', { location: 'testimonials_section', button: 'most_popular_professional_package' })}
               className="w-full inline-flex items-center justify-center rounded-lg bg-green-500 px-6 py-3 font-semibold text-white hover:bg-green-600 transition-colors"
             >
               Get Started
@@ -769,6 +804,7 @@ export default function Page() {
             
             <a 
               href="#contact"
+              onClick={() => track('cta_clicked', { location: 'pricing_section', button: 'complete_package_get_started' })}
               className="w-full inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold hover:bg-slate-50 transition-colors"
             >
               Get Started
@@ -881,7 +917,14 @@ export default function Page() {
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
               <button
-                onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                onClick={() => {
+                  // Track FAQ interaction
+                  track('faq_toggled', { 
+                    question: faq.question,
+                    action: openFaq === index ? 'close' : 'open'
+                  });
+                  setOpenFaq(openFaq === index ? null : index);
+                }}
                 className="w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors"
               >
                 <h3 className="text-xl font-semibold text-slate-800 pr-4">{faq.question}</h3>
@@ -970,14 +1013,22 @@ export default function Page() {
               className="space-y-6"
               onSubmit={(e) => {
                 e.preventDefault();
+                
+                // Track form submission
+                track('contact_form_submitted');
+                
                 const formData = new FormData(e.currentTarget);
                 fetch('https://api.web3forms.com/submit', {
                   method: 'POST',
                   body: formData
                 }).then(() => {
                   setFormSubmitted(true);
+                  // Track successful submission
+                  track('contact_form_success');
                 }).catch(() => {
                   setFormSubmitted(true); // Show success even if there's an error
+                  // Track form error
+                  track('contact_form_error');
                 });
               }}
             >
