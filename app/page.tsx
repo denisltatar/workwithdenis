@@ -1008,8 +1008,11 @@ export default function Page() {
                 });
               }}
             >
-            <input type="hidden" name="access_key" value="74ba85c8-069d-4d2a-af9e-66b8853ba748" />
+            <input type="hidden" name="access_key" value="9322692b-4b8b-4d3d-ab55-8ea7d235cf0c" />
             <input type="hidden" name="subject" value="New Contact Form Submission - Work With Denis" />
+            <input type="hidden" name="redirect" value="https://workwithdenis.com" />
+            <input type="hidden" name="from_name" value="Work With Denis Contact Form" />
+            <input type="hidden" name="replyto" value="hi@workwithdenis.com" />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
