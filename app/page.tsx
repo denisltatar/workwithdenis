@@ -1,5 +1,5 @@
 "use client";
-import { ChevronDown, Star, ArrowRight, Globe, Smartphone, Palette, CreditCard, MapPin } from "lucide-react";
+import { ChevronDown, Star, ArrowRight, Globe, Smartphone, Palette, CreditCard, MapPin, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import { track } from '@vercel/analytics';
@@ -162,14 +162,14 @@ export default function Page() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 pt-2 border-t border-slate-200">
+                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-green-600">24/7</div>
                     <div className="text-xs text-slate-600">Support</div>
                 </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-green-600">7+</div>
-                    <div className="text-xs text-slate-600">Years</div>
+                    <div className="text-xs text-slate-600 leading-tight">Years of Experience</div>
             </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-green-600">Free</div>
@@ -255,7 +255,7 @@ export default function Page() {
                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
                        >
                          <span>View Project</span>
-                         <ArrowRight className="w-4 h-4" />
+                         <ExternalLink className="w-4 h-4" />
                        </a>
                        <div className="text-sm text-slate-500">2025</div>
                      </div>
@@ -301,7 +301,7 @@ export default function Page() {
                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
                        >
                          <span>View Project</span>
-                         <ArrowRight className="w-4 h-4" />
+                         <ExternalLink className="w-4 h-4" />
                        </a>
                        <div className="text-sm text-slate-500">2025</div>
                      </div>
