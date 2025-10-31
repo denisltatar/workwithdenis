@@ -313,7 +313,7 @@ export default function Page() {
                    {/* Business Cards Thumbnail */}
                    <div className="relative h-48 bg-slate-100 overflow-hidden">
                      <img
-                       src="/FRONT V3.png"
+                       src="/BACK V3.png"
                        alt="Custom Business Cards Design"
                        className="w-full h-full object-cover"
                        style={{ display: 'block' }}
@@ -474,6 +474,195 @@ export default function Page() {
                    </div>
                  </div>
 
+                 {/* Imperial Concrete Systems Business Cards Project */}
+                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+                   {/* Business Cards Thumbnail */}
+                   <div className="relative h-48 bg-slate-100 overflow-hidden">
+                     <img
+                       src="/ICS-Card-2-Back.png"
+                       alt="Imperial Concrete Systems Business Cards Design"
+                       className="w-full h-full object-cover"
+                       style={{ display: 'block' }}
+                       onError={(e) => {
+                         console.log('Imperial Concrete Systems Business cards image failed to load');
+                         e.currentTarget.style.display = 'none';
+                       }}
+                       onLoad={() => {
+                         console.log('Imperial Concrete Systems Business cards image loaded successfully');
+                       }}
+                     />
+                   </div>
+
+                   <div className="p-6 pl-8">
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">Imperial Concrete Systems Business Cards</h3>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Business Cards</span>
+                     </div>
+                     <p className="text-slate-600 mb-4">Professional business card designs featuring bold lion branding, modern layouts, and high-quality printing specifications. Multiple design variations to choose from.</p>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Professional Design</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Print Ready</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Multiple Options</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <button
+                        onClick={() => {
+                          // Track project interaction
+                          track('project_viewed', { project: 'imperial_concrete_systems_business_cards_portfolio' });
+                          
+                          // Create a modal with flipable business cards
+                          const modal = document.createElement('div');
+                           modal.className = 'fixed inset-0 bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+                           modal.innerHTML = `
+                             <div class="bg-white rounded-2xl p-6 max-w-6xl max-h-[90vh] overflow-y-auto">
+                               <div class="flex justify-between items-center mb-6">
+                                 <h3 class="text-2xl font-bold text-slate-800">Imperial Concrete Systems Business Cards</h3>
+                                 <button onclick="this.closest('.fixed').remove()" class="text-slate-500 hover:text-slate-700 text-2xl">&times;</button>
+                               </div>
+                               <div class="mb-8 text-left">
+                                 <p class="text-slate-600">Professional business card designs with multiple layout options. Click any card to see both sides!</p>
+                               </div>
+                               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                 <!-- Card Set 1 -->
+                                 <div class="text-center">
+                                   <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                       <div class="absolute inset-2 backface-hidden">
+                                         <img src="/ICS-Card-1-Front.png" alt="Imperial Concrete Systems Business Card Front 1" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on front -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                       <div class="absolute inset-2 backface-hidden transform rotate-y-180">
+                                         <img src="/ICS-Card-1-Back.png" alt="Imperial Concrete Systems Business Card Back 1" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on back -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Design Set 1</p>
+                                 </div>
+                                 
+                                 <!-- Card Set 2 -->
+                                 <div class="text-center">
+                                   <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                       <div class="absolute inset-2 backface-hidden">
+                                         <img src="/ICS-Card-2-Front.png" alt="Imperial Concrete Systems Business Card Front 2" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on front -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                       <div class="absolute inset-2 backface-hidden transform rotate-y-180">
+                                         <img src="/ICS-Card-2-Back.png" alt="Imperial Concrete Systems Business Card Back 2" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on back -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Design Set 2</p>
+                                 </div>
+                                 
+                                 <!-- Card Set 3 -->
+                                 <div class="text-center">
+                                   <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                       <div class="absolute inset-2 backface-hidden">
+                                         <img src="/ICS-Card-3-Front.png" alt="Imperial Concrete Systems Business Card Front 3" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on front -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                       <div class="absolute inset-2 backface-hidden transform rotate-y-180">
+                                         <img src="/ICS-Card-3-Back.png" alt="Imperial Concrete Systems Business Card Back 3" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on back -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Design Set 3</p>
+                                 </div>
+                                 
+                                 <!-- Card Set 4 -->
+                                 <div class="text-center">
+                                   <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                       <div class="absolute inset-2 backface-hidden">
+                                         <img src="/ICS-Card-4-Front.png" alt="Imperial Concrete Systems Business Card Front 4" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on front -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                       <div class="absolute inset-2 backface-hidden transform rotate-y-180">
+                                         <img src="/ICS-Card-4-Back.png" alt="Imperial Concrete Systems Business Card Back 4" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on back -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Design Set 4</p>
+                                 </div>
+                                 
+                                 <!-- Card Set 5 -->
+                                 <div class="text-center">
+                                   <div class="relative w-80 h-48 mx-auto mb-4 perspective-1000">
+                                     <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer border-2 border-slate-200 rounded-xl p-2 bg-gradient-to-br from-slate-50 to-white" onclick="this.style.transform = this.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)'">
+                                       <div class="absolute inset-2 backface-hidden">
+                                         <img src="/ICS-Card-5-Front.png" alt="Imperial Concrete Systems Business Card Front 5" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on front -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                       <div class="absolute inset-2 backface-hidden transform rotate-y-180">
+                                         <img src="/ICS-Card-5-Back.png" alt="Imperial Concrete Systems Business Card Back 5" class="w-full h-full object-contain rounded-lg shadow-md" />
+                                         <!-- Tap indicator on back -->
+                                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-medium animate-pulse">
+                                           Tap
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Design Set 5</p>
+                                 </div>
+                               </div>
+                             </div>
+                           `;
+                           
+                           // Add CSS for the flip effect
+                           const style = document.createElement('style');
+                           style.textContent = `
+                             .perspective-1000 { perspective: 1000px; }
+                             .transform-style-preserve-3d { transform-style: preserve-3d; }
+                             .backface-hidden { backface-visibility: hidden; }
+                             .rotate-y-180 { transform: rotateY(180deg); }
+                           `;
+                           document.head.appendChild(style);
+                           document.body.appendChild(modal);
+                         }}
+                         className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                       >
+                         <span>View Designs</span>
+                         <ArrowRight className="w-4 h-4" />
+                       </button>
+                       <div className="text-sm text-slate-500">2025</div>
+                     </div>
+                   </div>
+                 </div>
+
                  {/* E&A Home Improvements Logo Project */}
                  <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
                    {/* Logo Thumbnail */}
@@ -536,6 +725,86 @@ export default function Page() {
                                  <div class="text-center p-4 md:p-6">
                                    <div class="relative w-[280px] h-[200px] md:w-[400px] md:h-[300px] mx-auto mb-4 p-2 md:p-4">
                                      <img src="/E&A Logo 2.png" alt="E&A Logo Design 2" class="w-full h-full object-contain rounded-lg shadow-lg" />
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Logo Design 2</p>
+                                 </div>
+                               </div>
+                             </div>
+                           `;
+                           document.body.appendChild(modal);
+                         }}
+                         className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                       >
+                         <span>View Designs</span>
+                         <ArrowRight className="w-4 h-4" />
+                       </button>
+                       <div className="text-sm text-slate-500">2025</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 {/* Imperial Concrete Systems Logo Project */}
+                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+                   {/* Logo Thumbnail */}
+                   <div className="relative h-48 bg-slate-100 overflow-hidden">
+                     <img
+                       src="/imperial-concrete-systems-1.png"
+                       alt="Imperial Concrete Systems Logo Design"
+                       className="w-full h-full object-cover"
+                       style={{ display: 'block' }}
+                       onError={(e) => {
+                         console.log('Imperial Concrete Systems Logo image failed to load');
+                         e.currentTarget.style.display = 'none';
+                       }}
+                       onLoad={() => {
+                         console.log('Imperial Concrete Systems Logo image loaded successfully');
+                       }}
+                     />
+                   </div>
+
+                   <div className="p-6 pl-8">
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">Imperial Concrete Systems Logo</h3>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Logo Design</span>
+                     </div>
+                     <p className="text-slate-600 mb-4">Professional logo design for Imperial Concrete Systems, featuring a bold lion emblem and modern typography that represents strength and reliability in the concrete construction industry.</p>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Professional Design</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Brand Identity</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Modern Typography</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <button
+                        onClick={() => {
+                          // Track project interaction
+                          track('project_viewed', { project: 'imperial_concrete_systems_logo_design_portfolio' });
+                          
+                          // Create a modal to show logo designs
+                          const modal = document.createElement('div');
+                           modal.className = 'fixed inset-0 bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+                           modal.innerHTML = `
+                             <div class="bg-white rounded-2xl p-6 max-w-4xl max-h-[90vh] overflow-y-auto">
+                               <div class="flex justify-between items-center mb-6">
+                                 <h3 class="text-2xl font-bold text-slate-800">Imperial Concrete Systems Logo Designs</h3>
+                                 <button onclick="this.closest('.fixed').remove()" class="text-slate-500 hover:text-slate-700 text-2xl">&times;</button>
+                               </div>
+                               <div class="mb-8 text-left">
+                                 <p class="text-slate-600">Professional logo designs for Imperial Concrete Systems, featuring a bold lion emblem and modern typography.</p>
+                               </div>
+                               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                 <!-- Logo Design 1 -->
+                                 <div class="text-center p-4 md:p-6">
+                                   <div class="relative w-[280px] h-[200px] md:w-[400px] md:h-[300px] mx-auto mb-4 p-2 md:p-4">
+                                     <img src="/imperial-concrete-systems-1.png" alt="Imperial Concrete Systems Logo Design 1" class="w-full h-full object-contain rounded-lg shadow-lg" />
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Logo Design 1</p>
+                                 </div>
+                                 
+                                 <!-- Logo Design 2 -->
+                                 <div class="text-center p-4 md:p-6">
+                                   <div class="relative w-[280px] h-[200px] md:w-[400px] md:h-[300px] mx-auto mb-4 p-2 md:p-4">
+                                     <img src="/imperial-concrete-systems-2.png" alt="Imperial Concrete Systems Logo Design 2" class="w-full h-full object-contain rounded-lg shadow-lg" />
                                    </div>
                                    <p class="text-sm text-slate-600 font-medium">Logo Design 2</p>
                                  </div>
