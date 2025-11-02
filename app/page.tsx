@@ -43,6 +43,20 @@ export default function Page() {
       company: "E&A Home Improvements",
       content: "Denis has really gone above and beyond our expectations. He's been incredibly helpful not just in creating our website, but also with our logos, Google Business setup, and even designing our business cards. His communication is clear and professional, and he truly cares about getting every detail right. We're extremely happy with how everything turned out and highly recommend him!",
       rating: 5
+    },
+    {
+      name: "Jamie",
+      role: "Founder",
+      company: "Imperial Concrete Systems",
+      content: "Working with Denis was an absolute pleasure! He made the entire process incredibly easy and stress-free. Not only did he deliver our website, logo, and business cards quickly, but the quality was outstanding. Denis was responsive, professional, and really understood our vision. He transformed our business identity with a professional look that truly represents who we are. Highly recommended!",
+      rating: 5
+    },
+    {
+      name: "Teo",
+      role: "Founder",
+      company: "Imperial Concrete Systems",
+      content: "Denis exceeded all our expectations with his exceptional work. He's incredibly easy to work with, fast at his job, and communicates clearly throughout the project. The attention to detail and his willingness to make adjustments until everything was perfect really set him apart. Couldn't recommend this guy enough.",
+      rating: 5
     }
   ];
 
@@ -296,6 +310,52 @@ export default function Page() {
                      <div className="flex items-center justify-between">
                        <a
                          href="https://eandahomeimprovements.com"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                       >
+                         <span>View Project</span>
+                         <ExternalLink className="w-4 h-4" />
+                       </a>
+                       <div className="text-sm text-slate-500">2025</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 {/* Imperial Concrete Systems Website Project */}
+                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+                   {/* Website Thumbnail */}
+                   <div className="relative h-48 bg-slate-100 overflow-hidden">
+                     <img
+                       src="/imperial-concrete-landing.png"
+                       alt="Imperial Concrete Systems Website Screenshot"
+                       className="w-full h-full object-cover"
+                       style={{ display: 'block', objectPosition: 'center top' }}
+                       onError={(e) => {
+                         console.log('Imperial Concrete Systems website image failed to load');
+                         e.currentTarget.style.display = 'none';
+                       }}
+                       onLoad={() => {
+                         console.log('Imperial Concrete Systems website image loaded successfully');
+                       }}
+                     />
+                   </div>
+
+                   <div className="p-6 pl-8">
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">Imperial Concrete Systems</h3>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Custom Website</span>
+                     </div>
+                     <p className="text-slate-600 mb-4">Complete custom website for Imperial Concrete Systems featuring modern design, responsive layout, and brand identity integration for their concrete construction services.</p>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Contact Forms</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">SEO Optimized</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Mobile Friendly</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <a
+                         href="https://imperialconcretesystems.com"
                          target="_blank"
                          rel="noopener noreferrer"
                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
@@ -1139,15 +1199,6 @@ export default function Page() {
               </div>
             </div>
           ))}
-          
-          {/* More Testimonials Coming Soon */}
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-2xl p-8 flex flex-col items-center justify-center text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-              <div className="w-8 h-8 bg-green-500 rounded-full animate-pulse"></div>
-            </div>
-            <h4 className="text-xl font-semibold text-slate-800 mb-2">More Testimonials</h4>
-            <p className="text-slate-600">Coming soon!</p>
-          </div>
         </div>
       </section>
 
