@@ -284,7 +284,7 @@ export default function Page() {
                        src="/eandahome-screenshot.png"
                        alt="E&A Home Improvements Website Screenshot"
                        className="w-full h-full object-cover"
-                       style={{ display: 'block' }}
+                       style={{ display: 'block', objectPosition: 'center 70%' }}
                        onError={(e) => {
                          console.log('E&A image failed to load');
                          e.currentTarget.style.display = 'none';
@@ -356,6 +356,52 @@ export default function Page() {
                      <div className="flex items-center justify-between">
                        <a
                          href="https://imperialconcretesystems.com"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                       >
+                         <span>View Project</span>
+                         <ExternalLink className="w-4 h-4" />
+                       </a>
+                       <div className="text-sm text-slate-500">2025</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 {/* Neural Nonsense Project */}
+                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+                   {/* Website Thumbnail */}
+                   <div className="relative h-48 bg-slate-100 overflow-hidden">
+                     <img
+                       src="/Neural-nonsense-cover.png"
+                       alt="Neural Nonsense Website Screenshot"
+                       className="w-full h-full object-cover"
+                       style={{ display: 'block', objectPosition: 'center 32%' }}
+                       onError={(e) => {
+                         console.log('Neural Nonsense image failed to load');
+                         e.currentTarget.style.display = 'none';
+                       }}
+                       onLoad={() => {
+                         console.log('Neural Nonsense image loaded successfully');
+                       }}
+                     />
+                   </div>
+
+                   <div className="p-6 pl-8">
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">Neural Nonsense</h3>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Custom Website</span>
+                     </div>
+                     <p className="text-slate-600 mb-4">Custom website design for Neural Nonsense YouTube/TikTok channel, featuring modern design, engaging content layout, and optimized user experience for social media content creators.</p>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">User-Friendly</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Mobile Optimized</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Fast Loading</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <a
+                         href="https://neural-nonsense-website.vercel.app/"
                          target="_blank"
                          rel="noopener noreferrer"
                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
@@ -876,6 +922,78 @@ export default function Page() {
                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
                        >
                          <span>View Designs</span>
+                         <ArrowRight className="w-4 h-4" />
+                       </button>
+                       <div className="text-sm text-slate-500">2025</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 {/* Neural Nonsense Logo Project */}
+                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+                   {/* Logo Thumbnail */}
+                   <div className="relative h-48 bg-slate-100 overflow-hidden">
+                     <img
+                       src="/brain-alone.png"
+                       alt="Neural Nonsense Logo Design"
+                       className="w-full h-full object-cover"
+                       style={{ display: 'block' }}
+                       onError={(e) => {
+                         console.log('Neural Nonsense Logo image failed to load');
+                         e.currentTarget.style.display = 'none';
+                       }}
+                       onLoad={() => {
+                         console.log('Neural Nonsense Logo image loaded successfully');
+                       }}
+                     />
+                   </div>
+
+                   <div className="p-6 pl-8">
+                     <h3 className="text-2xl font-bold text-slate-800 mb-2 pl-1">Neural Nonsense Logo</h3>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Logo Design</span>
+                     </div>
+                     <p className="text-slate-600 mb-4">Custom logo design for Neural Nonsense YouTube/TikTok channel, featuring a distinctive brain icon that represents the channel&apos;s AI-powered content and creative humor.</p>
+                     <div className="flex flex-wrap gap-2 mb-4">
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Professional Design</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Brand Identity</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Modern Design</span>
+                       <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Custom Branding</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <button
+                        onClick={() => {
+                          // Track project interaction
+                          track('project_viewed', { project: 'neural_nonsense_logo_design_portfolio' });
+                          
+                          // Create a modal to show logo design
+                          const modal = document.createElement('div');
+                           modal.className = 'fixed inset-0 bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4';
+                           modal.innerHTML = `
+                             <div class="bg-white rounded-2xl p-6 max-w-4xl max-h-[90vh] overflow-y-auto">
+                               <div class="flex justify-between items-center mb-6">
+                                 <h3 class="text-2xl font-bold text-slate-800">Neural Nonsense Logo Design</h3>
+                                 <button onclick="this.closest('.fixed').remove()" class="text-slate-500 hover:text-slate-700 text-2xl">&times;</button>
+                               </div>
+                               <div class="mb-8 text-left">
+                                 <p class="text-slate-600">Custom logo design for Neural Nonsense YouTube/TikTok channel, featuring a distinctive brain icon that represents the channel&apos;s AI-powered content and creative humor.</p>
+                               </div>
+                               <div class="grid grid-cols-1 gap-8">
+                                 <!-- Logo Design -->
+                                 <div class="text-center p-4 md:p-6">
+                                   <div class="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] mx-auto mb-4 p-2 md:p-4">
+                                     <img src="/brain-alone.png" alt="Neural Nonsense Logo Design" class="w-full h-full object-contain rounded-lg shadow-lg" />
+                                   </div>
+                                   <p class="text-sm text-slate-600 font-medium">Neural Nonsense Logo</p>
+                                 </div>
+                               </div>
+                             </div>
+                           `;
+                           document.body.appendChild(modal);
+                         }}
+                         className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                       >
+                         <span>View Design</span>
                          <ArrowRight className="w-4 h-4" />
                        </button>
                        <div className="text-sm text-slate-500">2025</div>
